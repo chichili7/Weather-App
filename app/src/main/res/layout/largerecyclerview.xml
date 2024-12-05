@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="#33000000"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/bigtemp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datetime" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datetime"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bigtemp"/>
+
+    <TextView
+        android:id="@+id/precip"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/description"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <TextView
+        android:id="@+id/UVindex12"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/precip"
+        app:layout_constraintStart_toStartOf="@+id/precip"
+        app:layout_constraintTop_toBottomOf="@+id/precip" />
+
+    <TextView
+        android:id="@+id/mrgtemp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/UVindex12"
+        app:layout_constraintTop_toBottomOf="@+id/UVindex12" />
+
+    <TextView
+        android:id="@+id/aftnontemp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textSize="24dp"
+        app:layout_constraintStart_toEndOf="@+id/mrgtemp"
+        app:layout_constraintTop_toBottomOf="@+id/UVindex12" />
+
+    <TextView
+        android:id="@+id/evetemp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textSize="24dp"
+        app:layout_constraintStart_toEndOf="@+id/aftnontemp"
+        app:layout_constraintTop_toBottomOf="@+id/UVindex12" />
+
+    <TextView
+        android:id="@+id/nighttemp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textSize="24dp"
+        app:layout_constraintStart_toEndOf="@+id/evetemp"
+        app:layout_constraintTop_toBottomOf="@+id/UVindex12" />
+
+    <TextView
+        android:id="@+id/mrg"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Morning"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mrgtemp"
+        app:layout_constraintTop_toBottomOf="@+id/mrgtemp" />
+
+    <TextView
+        android:id="@+id/aftrnoon"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Afternoon"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/aftnontemp"
+        app:layout_constraintStart_toStartOf="@+id/aftnontemp"
+        app:layout_constraintTop_toBottomOf="@+id/aftnontemp" />
+
+    <TextView
+        android:id="@+id/eve"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Evening"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/evetemp"
+        app:layout_constraintStart_toStartOf="@+id/evetemp"
+        app:layout_constraintTop_toBottomOf="@+id/evetemp" />
+
+    <TextView
+        android:id="@+id/night"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Night"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/nighttemp"
+        app:layout_constraintStart_toStartOf="@+id/nighttemp"
+        app:layout_constraintTop_toBottomOf="@+id/nighttemp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

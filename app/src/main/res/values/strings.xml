@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="failed_to_access_location">Failed to access location</string>
+    <string name="deniedText">Location permission was denied - cannot determine address</string>
+    <string name="cannot_determine_location">Cannot determine location</string>
+    <string name="cannot_determine_place">Cannot determine place name</string>
+    <string name="location_was_null">Location was null</string>
+
+</resources>
